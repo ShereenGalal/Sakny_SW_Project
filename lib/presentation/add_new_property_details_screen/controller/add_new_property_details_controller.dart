@@ -1,5 +1,17 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/add_new_property_details_screen/models/add_new_property_details_model.dart';class AddNewPropertyDetailsController extends GetxController {Rx<AddNewPropertyDetailsModel> addNewPropertyDetailsModelObj = AddNewPropertyDetailsModel().obs;
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/add_new_property_details_screen/models/add_new_property_details_model.dart';
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+class AddNewPropertyDetailsController extends GetxController {
+  Rx<AddNewPropertyDetailsModel> addNewPropertyDetailsModelObj =
+      AddNewPropertyDetailsModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

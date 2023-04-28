@@ -1,9 +1,32 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/verify_phone_number_screen/models/verify_phone_number_model.dart';import 'package:sms_autofill/sms_autofill.dart';import 'package:flutter/material.dart';class VerifyPhoneNumberController extends GetxController with  CodeAutoFill {Rx<TextEditingController> otpController = TextEditingController().obs;
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/verify_phone_number_screen/models/verify_phone_number_model.dart';
+import 'package:sms_autofill/sms_autofill.dart';
+import 'package:flutter/material.dart';
 
-Rx<VerifyPhoneNumberModel> verifyPhoneNumberModelObj = VerifyPhoneNumberModel().obs;
+class VerifyPhoneNumberController extends GetxController with CodeAutoFill {
+  Rx<TextEditingController> otpController = TextEditingController().obs;
 
-@override void codeUpdated() { otpController.value.text = code!; } 
-@override void onInit() { super.onInit(); listenForCode(); } 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+  Rx<VerifyPhoneNumberModel> verifyPhoneNumberModelObj =
+      VerifyPhoneNumberModel().obs;
+
+  @override
+  void codeUpdated() {
+    otpController.value.text = code!;
+  }
+
+  @override
+  void onInit() {
+    super.onInit();
+    listenForCode();
+  }
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

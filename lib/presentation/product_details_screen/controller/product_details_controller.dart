@@ -1,9 +1,20 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/product_details_screen/models/product_details_model.dart';class ProductDetailsController extends GetxController {Rx<ProductDetailsModel> productDetailsModelObj = ProductDetailsModel().obs;
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/product_details_screen/models/product_details_model.dart';
 
-Rx<int> silderIndex = 0.obs;
+class ProductDetailsController extends GetxController {
+  Rx<ProductDetailsModel> productDetailsModelObj = ProductDetailsModel().obs;
 
-RxString radioGroup = "".obs;
+  Rx<int> silderIndex = 0.obs;
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+  RxString radioGroup = "".obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

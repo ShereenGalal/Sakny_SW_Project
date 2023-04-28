@@ -1,9 +1,11 @@
-import 'package:get/get.dart';class MessageItemModel {Rx<String> wadewarrenTxt = Rx("lbl_wade_warren".tr);
+import 'package:get/get.dart';
 
-Rx<String> messageTxt = Rx("msg_oh_hello_willam".tr);
+class MessageItemModel {
+  Rx<String> wadewarrenTxt = Rx("lbl_wade_warren".tr);
 
-Rx<String> timeTxt = Rx("lbl_23_15".tr);
+  Rx<String> messageTxt = Rx("msg_oh_hello_willam".tr);
 
-String? id = "";
+  Rx<String> timeTxt = Rx("lbl_23_15".tr);
 
- }
+  String? id = "";
+}

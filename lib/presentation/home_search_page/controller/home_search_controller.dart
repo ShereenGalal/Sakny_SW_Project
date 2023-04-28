@@ -1,9 +1,22 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/home_search_page/models/home_search_model.dart';import 'package:flutter/material.dart';class HomeSearchController extends GetxController {HomeSearchController(this.homeSearchModelObj);
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/home_search_page/models/home_search_model.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController searchController = TextEditingController();
+class HomeSearchController extends GetxController {
+  HomeSearchController(this.homeSearchModelObj);
 
-Rx<HomeSearchModel> homeSearchModelObj;
+  TextEditingController searchController = TextEditingController();
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); searchController.dispose(); } 
- }
+  Rx<HomeSearchModel> homeSearchModelObj;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    searchController.dispose();
+  }
+}

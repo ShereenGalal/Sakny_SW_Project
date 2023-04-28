@@ -1,9 +1,11 @@
-import 'package:get/get.dart';class Listrectangle4224ItemModel {Rx<String> thenewschoolatTxt = Rx("msg_the_new_school".tr);
+import 'package:get/get.dart';
 
-Rx<String> publicprekEightTxt = Rx("msg_public_prek_8".tr);
+class Listrectangle4224ItemModel {
+  Rx<String> thenewschoolatTxt = Rx("msg_the_new_school".tr);
 
-Rx<String> reviewsCounterTxt = Rx("lbl_12_reviews".tr);
+  Rx<String> publicprekEightTxt = Rx("msg_public_prek_8".tr);
 
-String? id = "";
+  Rx<String> reviewsCounterTxt = Rx("lbl_12_reviews".tr);
 
- }
+  String? id = "";
+}

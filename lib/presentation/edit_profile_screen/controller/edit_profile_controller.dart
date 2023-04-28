@@ -1,13 +1,29 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/edit_profile_screen/models/edit_profile_model.dart';import 'package:flutter/material.dart';class EditProfileController extends GetxController {TextEditingController fullnameOneController = TextEditingController();
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/edit_profile_screen/models/edit_profile_model.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController emailOneController = TextEditingController();
+class EditProfileController extends GetxController {
+  TextEditingController fullnameOneController = TextEditingController();
 
-TextEditingController addressOneController = TextEditingController();
+  TextEditingController emailOneController = TextEditingController();
 
-TextEditingController passwordOneController = TextEditingController();
+  TextEditingController addressOneController = TextEditingController();
 
-Rx<EditProfileModel> editProfileModelObj = EditProfileModel().obs;
+  TextEditingController passwordOneController = TextEditingController();
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); fullnameOneController.dispose(); emailOneController.dispose(); addressOneController.dispose(); passwordOneController.dispose(); } 
- }
+  Rx<EditProfileModel> editProfileModelObj = EditProfileModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    fullnameOneController.dispose();
+    emailOneController.dispose();
+    addressOneController.dispose();
+    passwordOneController.dispose();
+  }
+}

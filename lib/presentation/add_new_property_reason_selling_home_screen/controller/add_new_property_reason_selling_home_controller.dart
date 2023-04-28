@@ -1,17 +1,30 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/add_new_property_reason_selling_home_screen/models/add_new_property_reason_selling_home_model.dart';class AddNewPropertyReasonSellingHomeController extends GetxController {Rx<AddNewPropertyReasonSellingHomeModel> addNewPropertyReasonSellingHomeModelObj = AddNewPropertyReasonSellingHomeModel().obs;
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/add_new_property_reason_selling_home_screen/models/add_new_property_reason_selling_home_model.dart';
 
-RxBool checkbox = false.obs;
+class AddNewPropertyReasonSellingHomeController extends GetxController {
+  Rx<AddNewPropertyReasonSellingHomeModel>
+      addNewPropertyReasonSellingHomeModelObj =
+      AddNewPropertyReasonSellingHomeModel().obs;
 
-RxBool checkbox1 = false.obs;
+  RxBool checkbox = false.obs;
 
-RxBool checkbox2 = false.obs;
+  RxBool checkbox1 = false.obs;
 
-RxBool checkbox3 = false.obs;
+  RxBool checkbox2 = false.obs;
 
-RxBool checkbox4 = false.obs;
+  RxBool checkbox3 = false.obs;
 
-RxBool checkbox5 = false.obs;
+  RxBool checkbox4 = false.obs;
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+  RxBool checkbox5 = false.obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

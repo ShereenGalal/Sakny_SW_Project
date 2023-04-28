@@ -1,5 +1,7 @@
-import 'package:get/get.dart';class ChipviewhomeItemModel {Rx<String> homeTxt = Rx("Home");
+import 'package:get/get.dart';
 
-RxBool isSelected = false.obs;
+class ChipviewhomeItemModel {
+  Rx<String> homeTxt = Rx("Home");
 
- }
+  RxBool isSelected = false.obs;
+}

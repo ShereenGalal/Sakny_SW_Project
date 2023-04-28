@@ -1,7 +1,10 @@
-import 'package:get/get.dart';import 'package:flutter/material.dart';class ListwhatsappItemModel {Rx<String> whatsappOneTxt = Rx("lbl_whatsapp".tr);
+import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController streetaddressController = TextEditingController();
+class ListwhatsappItemModel {
+  Rx<String> whatsappOneTxt = Rx("lbl_whatsapp".tr);
 
-String? id = "";
+  TextEditingController streetaddressController = TextEditingController();
 
- }
+  String? id = "";
+}

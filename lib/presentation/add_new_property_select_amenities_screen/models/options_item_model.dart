@@ -1,5 +1,7 @@
-import 'package:get/get.dart';class OptionsItemModel {Rx<String> freewifiTxt = Rx("Free WiFi");
+import 'package:get/get.dart';
 
-RxBool isSelected = false.obs;
+class OptionsItemModel {
+  Rx<String> freewifiTxt = Rx("Free WiFi");
 
- }
+  RxBool isSelected = false.obs;
+}

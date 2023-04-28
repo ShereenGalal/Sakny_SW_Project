@@ -1,5 +1,17 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/add_new_property_meet_with_a_agent_screen/models/add_new_property_meet_with_a_agent_model.dart';class AddNewPropertyMeetWithAAgentController extends GetxController {Rx<AddNewPropertyMeetWithAAgentModel> addNewPropertyMeetWithAAgentModelObj = AddNewPropertyMeetWithAAgentModel().obs;
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/add_new_property_meet_with_a_agent_screen/models/add_new_property_meet_with_a_agent_model.dart';
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+class AddNewPropertyMeetWithAAgentController extends GetxController {
+  Rx<AddNewPropertyMeetWithAAgentModel> addNewPropertyMeetWithAAgentModelObj =
+      AddNewPropertyMeetWithAAgentModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

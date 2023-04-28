@@ -1,5 +1,7 @@
-import 'package:get/get.dart';class Time1ItemModel {Rx<String> timeTxt = Rx("lbl_9_00_am".tr);
+import 'package:get/get.dart';
 
-String? id = "";
+class Time1ItemModel {
+  Rx<String> timeTxt = Rx("lbl_9_00_am".tr);
 
- }
+  String? id = "";
+}

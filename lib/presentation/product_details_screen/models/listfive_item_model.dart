@@ -1,7 +1,9 @@
-import 'package:get/get.dart';class ListfiveItemModel {Rx<String> fiveTxt = Rx("lbl_5".tr);
+import 'package:get/get.dart';
 
-Rx<String> sixtyTxt = Rx("lbl_60".tr);
+class ListfiveItemModel {
+  Rx<String> fiveTxt = Rx("lbl_5".tr);
 
-String? id = "";
+  Rx<String> sixtyTxt = Rx("lbl_60".tr);
 
- }
+  String? id = "";
+}

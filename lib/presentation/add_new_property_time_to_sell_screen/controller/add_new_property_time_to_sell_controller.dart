@@ -1,17 +1,36 @@
-import 'package:sakny/core/app_export.dart';import 'package:sakny/presentation/add_new_property_time_to_sell_screen/models/add_new_property_time_to_sell_model.dart';import 'package:flutter/material.dart';class AddNewPropertyTimeToSellController extends GetxController {TextEditingController durationController = TextEditingController();
+import 'package:sakny/core/app_export.dart';
+import 'package:sakny/presentation/add_new_property_time_to_sell_screen/models/add_new_property_time_to_sell_model.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController streetaddressController = TextEditingController();
+class AddNewPropertyTimeToSellController extends GetxController {
+  TextEditingController durationController = TextEditingController();
 
-TextEditingController durationOneController = TextEditingController();
+  TextEditingController streetaddressController = TextEditingController();
 
-TextEditingController durationTwoController = TextEditingController();
+  TextEditingController durationOneController = TextEditingController();
 
-TextEditingController durationThreeController = TextEditingController();
+  TextEditingController durationTwoController = TextEditingController();
 
-TextEditingController streetaddressOneController = TextEditingController();
+  TextEditingController durationThreeController = TextEditingController();
 
-Rx<AddNewPropertyTimeToSellModel> addNewPropertyTimeToSellModelObj = AddNewPropertyTimeToSellModel().obs;
+  TextEditingController streetaddressOneController = TextEditingController();
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); durationController.dispose(); streetaddressController.dispose(); durationOneController.dispose(); durationTwoController.dispose(); durationThreeController.dispose(); streetaddressOneController.dispose(); } 
- }
+  Rx<AddNewPropertyTimeToSellModel> addNewPropertyTimeToSellModelObj =
+      AddNewPropertyTimeToSellModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    durationController.dispose();
+    streetaddressController.dispose();
+    durationOneController.dispose();
+    durationTwoController.dispose();
+    durationThreeController.dispose();
+    streetaddressOneController.dispose();
+  }
+}

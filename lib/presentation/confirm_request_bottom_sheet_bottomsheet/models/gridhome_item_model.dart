@@ -1,7 +1,9 @@
-import 'package:get/get.dart';class GridhomeItemModel {Rx<String> homeclosedTxt = Rx("lbl_home_closed".tr);
+import 'package:get/get.dart';
 
-Rx<String> twentyFiveTxt = Rx("lbl_25".tr);
+class GridhomeItemModel {
+  Rx<String> homeclosedTxt = Rx("lbl_home_closed".tr);
 
-String? id = "";
+  Rx<String> twentyFiveTxt = Rx("lbl_25".tr);
 
- }
+  String? id = "";
+}
